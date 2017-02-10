@@ -31,6 +31,7 @@ requirements:
     - swig
     - freetype
     - gcc               [linux]
+    - smesh ==6.7.1
   run:
     - pyqt
     - wxpython          [py27]
@@ -39,6 +40,7 @@ requirements:
     - python
     - freetype
     - pyobjc-core       [osx and py27]
+    - smesh ==6.7.1
 
 test:
   requires:
