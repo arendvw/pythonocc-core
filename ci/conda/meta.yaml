@@ -32,6 +32,7 @@ requirements:
     - freetype
     - gcc               [linux]
     - smesh ==6.7.1
+    - boost
   run:
     - pyqt
     - wxpython          [py27]
