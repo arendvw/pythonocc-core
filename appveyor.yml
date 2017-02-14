@@ -1,4 +1,4 @@
-version: tst
+version: tst.{build}
 
 environment:
   global:
@@ -77,7 +77,7 @@ test_script:
   # doesn't really work.
   #
   - "%CMD_IN_ENV% conda build .\\ci\\conda --quiet --no-remove-work-dir"
-  # move conda package to /dist
+  # move conda package to /dist pp
   - cmd: 'mkdir dist'
   - cmd: 'copy /Y %CONDA_INSTALL_LOCN%\conda-bld\win-%PYTHON_ARCH%\pythonocc*.bz2 dist || cmd /c "exit /b 0"'
 
